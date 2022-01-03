@@ -3,27 +3,24 @@
 {% load static%}
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <body>
 
   <div class="mundito">
     <div class="mapa">
       <div class="aparecer1">
-        <img src="{% static 'img/coin.png' %}" class="img11">
+        <img src="{% static 'img/icons/Mineria.png' %}" class="img11">
       </div>
 
       <div class="aparecer3">
-        <img src="{% static 'img/nueva señal.png' %}" class="img33">
+        <img src="{% static 'img/icons/Estadistica.png' %}" class="img33">
       </div>
 
       <div class="aparecer4">
-        <img src="{% static 'img/espacio vacio.png' %}" class="img44">
+        <img src="{% static 'img/icons/Engranajes.png' %}" class="img44">
       </div>
 
       <div class="aparecer2">
-        <img src="{% static 'img/señal wifi.png' %}" class="img22">
+        <img src="{% static 'img/icons/Perfil.png' %}" class="img22">
       </div>
 
 
@@ -45,7 +42,7 @@
     <div class="containerCards">
       <div class="card">
         <figure>
-          <img src=" {% static 'img/barras.png' %}">
+          <img src=" {% static 'img/icons/consulta.png' %}">
         </figure>
         <div class="contenido">
           <h3>Consultoria Tecnologica</h3>
@@ -60,7 +57,7 @@
 
       <div class="card">
         <figure>
-          <img src=" {% static 'img/barras.png' %}">
+          <img src=" {% static 'img/icons/tecnologia.png' %}">
         </figure>
         <div class="contenido">
           <h3>Integracion de soluciones tecnologicas</h3>
@@ -76,7 +73,7 @@
 
       <div class="card">
         <figure>
-          <img src=" {% static 'img/barras.png' %}">
+          <img src=" {% static 'img/icons/estadisticas.png' %}">
         </figure>
         <div class="contenido">
           <h3>Monitoreo web de procesos</h3>
@@ -112,28 +109,28 @@
       <!-- tabla de contenidos -->
       <table class="elementor">
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img">
+          <td><img src="{% static 'img/icons/cerebro.png' %}" class="img">
           </td>
           <td>Decisiones en tiempo real</td>
         </tr>
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img"></td>
+          <td><img src="{% static 'img/icons/lupa.png' %}" class="img"></td>
           <td>Tazabilidad operativa</td>
         </tr>
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img"></td>
+          <td><img src="{% static 'img/icons/learning data.png' %}" class="img"></td>
           <td>Learning data</td>
         </tr>
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img"></td>
+          <td><img src="{% static 'img/icons/escalabilidad.png' %}" class="img"></td>
           <td>Escalabilidad</td>
         </tr>
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img"></td>
+          <td><img src="{% static 'img/icons/procesos.png' %}" class="img"></td>
           <td>Inteligencia en procesos</td>
         </tr>
         <tr>
-          <td><img src="{% static 'img/tecno.jpg' %}" class="img"></td>
+          <td><img src="{% static 'img/icons/recursos.png' %}" class="img"></td>
           <td>Optimización de recursos</td>
         </tr>
       </table>
@@ -223,28 +220,25 @@
               <td>
                 <h4> Nombre* </h4>
                 <input class="controllers" type="text" name="nombre" id="nombreField" placeholder="Ingrese su nombre"
-                  required minlength="4" required maxlength="16" onkeypress="return ch(event)">
+                   onkeypress="return ch(event)" required>
               </td>
 
               <td>
                 <h4> Apellidos* </h4>
                 <input class="controllers" type="text" name="apellido" id="apellidoField"
-                  placeholder="Ingrese su apellido" required minlength="4" required maxlength="16"
-                  onkeypress="return ch(event)" />
+                  placeholder="Ingrese su apellido" onkeypress="return ch(event)" required>
               </td>
             </tr>
 
             <tr>
               <td>
                 <h4> Correo* </h4>
-                <input class="controllers" type="email" name="correo" id="correoField" placeholder="Ingrese su correo"
-                  required minlength="10" required />
+                <input class="controllers" type="email" name="correo" id="correoField" placeholder="Ingrese su correo" required>
               </td>
               <td>
                 <h4> Telefono* </h4>
                 <input class="controllers" type="tel" name="telefono" id="telefonoField"
-                  placeholder="Ingrese su telefono" required minlength="1" required maxlength="11"
-                  onkeypress="return numb(event)" />
+                  placeholder="Ingrese su telefono" onkeypress="return numb(event)" required>
               </td>
             </tr>
 
@@ -252,20 +246,19 @@
               <td>
                 <h4> Empresa* </h4>
                 <input class="controllers" type="text" name="nombre" id="empresaField"
-                  placeholder="Ingrese el nombre de empresa" required minlength="4" required maxlength="16"
-                  onkeypress="return ch(event)">
+                  placeholder="Ingrese el nombre de empresa" onkeypress="return ch(event)" required>
               </td>
               <td>
                 <h4> Cargo* </h4>
                 <input class="controllers" type="text" name="apellido" id="cargoField" placeholder="Ingrese su cargo"
-                  required minlength="4" required maxlength="16" onkeypress="return ch(event)" />
+                 onkeypress="return ch(event)" required>
               </td>
             </tr>
           </table>
 
           <h4> Comentarios* </h4>
-          <textarea class="controllers" required placeholder="Deje su comentario" id="comentariosField" required
-            minlength="1" maxlength="140" onkeypress="return check(event)"></textarea>
+          <textarea class="controllers" placeholder="Deje su comentario" id="comentariosField"
+             onkeypress="return check(event)" required></textarea>
 
           <!-- <input class="buttons" type="submit" value="Contactanos"> -->
           <button  class="buttons" type="submit" onclick="datos()" style="color: white;"> Enviar </button>
@@ -286,10 +279,24 @@
 <script src="{% static 'scripts/jquery.js' %}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <script>
 
 function datos() {
-      $.ajax({
+
+  if ( document.getElementById('comentariosField').value == ""){
+    console.log("te hace falta llenar los campos")
+
+    Swal.fire(
+  'Campos incompletos',
+  '¿Te olvidaste de llenar alguno?',
+  'question'
+)
+
+  } else{
+
+
+    $.ajax({
         url: "{% url 'index' %}",
         type: "POST",
         data: {
@@ -309,6 +316,8 @@ function datos() {
           console.log("Success");
         }
       });
+  }
+  
 
     }
 

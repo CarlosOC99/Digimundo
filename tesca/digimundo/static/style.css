@@ -195,7 +195,7 @@ header label{
 }
 
 .card img{
-    width: 330px;
+    width: 200px;
     height: 220px;
     display:block;
     margin:auto;
@@ -258,6 +258,7 @@ height: 1100px;
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 7px 13px 37px #000;
 }
 /* fin redondeado de imagen*/
 
