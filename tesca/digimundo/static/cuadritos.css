@@ -1,0 +1,171 @@
+.mapa{
+    float: center;
+     position: absolute;
+    top: 10%;
+    right: -5%;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+.img11 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 40px;
+    margin-bottom: 800px;
+    position: absolute;
+    animation: bounce1 .5s alternate infinite ease-in;
+    animation-delay: 1s;
+    z-index: 20;
+  }
+
+  .img22 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 300px;
+    margin-top: 250px;
+    position: absolute;
+    animation: bounce1 .5s alternate infinite ease-in;
+    z-index: 20;
+    animation-delay: 2s;
+  }
+
+  .img33 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 300px;
+    position: absolute;
+    animation: bounce1 .5s alternate infinite ease-in;
+    z-index: 20;
+    animation-delay: 3s;
+  }
+
+  .img44 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 300px;
+    margin-top: 250px;
+    position: absolute;
+    animation: bounce1 .5s alternate infinite ease-in;
+    z-index: 20;
+    animation-delay: 4s;
+  }
+
+ .aparecer1{
+animation-name: aparecer1;
+animation-iteration-count: 1s;
+animation-duration: 1s ;
+animation-timing-function: step-end;
+animation-direction: alternate;
+}
+
+
+@keyframes aparecer1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.aparecer2{  
+    animation-name: aparecer2;
+    animation-iteration-count: 1s;
+    animation-duration: 2s ;
+    animation-timing-function: step-end;
+    animation-direction: alternate;
+    }
+    
+    
+    
+@keyframes aparecer2 {
+    from{  
+    opacity: 0;
+    }
+    to{
+        opacity: 1;   
+    }
+}
+
+
+.aparecer3{
+    animation-name: aparecer3;
+    animation-iteration-count: 1s;
+    animation-duration: 3s ;
+    animation-timing-function: step-end;
+    animation-direction: alternate;
+    }
+    
+    @keyframes aparecer3 {
+    from{
+    opacity: 0;
+        }
+    to{
+    opacity: 1;
+        }
+    }
+      
+.aparecer4{
+    animation-name: aparecer2;
+    animation-iteration-count: 1s;
+    animation-duration: 4s ;
+    animation-timing-function: step-end;
+    animation-direction: alternate;
+    }
+    
+    
+    @keyframes aparecer4 {
+        from{
+           
+    opacity: 0;
+        }
+    to{
+    opacity: 1;
+        }
+    }
+     
+
+.mapa{
+    margin-right: 250px;
+    margin-top: 50px;
+    float: right;
+    width: 350px;
+    height: 350px;
+    background: lightblue;
+    border-radius: 50%;
+    box-shadow: 1px 10px 30px rgb(0, 208, 245)  , 
+         -30px -20px 0 0 rgba(0,0,0,.1) inset,
+         -70px -30px 0 0 rgba(0,0,0,.1) inset,
+         -5px 5px 0 0 rgba(255,255,255,.2) inset;
+    background: url(../static/img/mundo.jpg);
+    background-size: cover;
+    -webkit-animation : tierra 5s infinite linear;
+   
+}
+
+/* Webkit es el motor de renderizado html / css utilizado en el navegador Safari de Apple y en Google Chrome. Los prefijos de css values ​​con -webkit-*/
+
+/* @-webkit-keyframes tierra{*/
+
+    @keyframes bounce1{
+        0%{
+            transform: translateY(-40%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+    }
+    
+
+    @keyframes tierra{
+        from{
+            background-position: left center;
+        }
+
+        to{
+            background-position: -396px center;
+        }
+    }
+
