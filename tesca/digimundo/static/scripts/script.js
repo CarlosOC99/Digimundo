@@ -35,3 +35,31 @@ function numb(e) {
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
+
+function mostrar1() {
+    document.getElementById('texto1').style.display = "inline";
+    document.getElementById('texto2').style.display = "none";
+    document.getElementById('texto3').style.display = "none";
+    document.getElementById('texto4').style.display = "none";
+}
+
+function mostrar2() {
+    document.getElementById('texto1').style.display = "none";
+    document.getElementById('texto2').style.display = "inline";
+    document.getElementById('texto3').style.display = "none";
+    document.getElementById('texto4').style.display = "none";
+}
+
+function mostrar3() {
+    document.getElementById('texto1').style.display = "none";
+    document.getElementById('texto2').style.display = "none";
+    document.getElementById('texto3').style.display = "inline";
+    document.getElementById('texto4').style.display = "none";
+}
+
+function mostrar4() {
+    document.getElementById('texto1').style.display = "none";
+    document.getElementById('texto2').style.display = "none";
+    document.getElementById('texto3').style.display = "none";
+    document.getElementById('texto4').style.display = "inline";
+}

@@ -4,12 +4,13 @@ from .models import Registro
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import get_template
-
+from PIL import Image
 
 def index(request):
-  if request.method == 'POST':
+  if request.method == 'POST':  
         correoD=request.POST['correo']
-
+        img = Image.open("picture.jpg") 
+        asunto= request.POST['nombre']+ ' '+ request.POST['apellidos']+ ', '+ request.POST['cargo']+ ' en '+ request.POST['empresa']+ ' con correo '+ request.POST['correo']+ ' \n ' +'Envio su informacion para una consulta con respecto al asunto: '+ request.POST['comentarios']+ ' \n '+ 'En breve sera contactado al numero ' + request.POST['telefono']
         datos = Registro.objects.create(
             nombre=request.POST['nombre'], apellidos=request.POST['apellidos'], 
             correo=request.POST['correo'], telefono=request.POST['telefono'],
@@ -20,8 +21,8 @@ def index(request):
 
         send_mail(
     'Correo de Confirmacion',
-    'Hola, Recibimos tu correo y en breve nos comunicaremos contigo para mas informacion 🐍',
-    settings.EMAIL_HOST_USER,
+    asunto,
+    'digimundo technologies',
     [correoD,'tescacorpora@gmail.com'],
     fail_silently=False
 )
