@@ -3,6 +3,7 @@
 {% load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <body>
 
   <div class="mundito">
@@ -30,12 +31,9 @@
   <div class="container" style="background-color:white;">
 
     <div class="cabeza">
-      <h1 class="cabe">E - COMMERCE LOGISTICS</h1>
-      <p> Implementa la trazabilidad 4.0 con clientes y proveedores
-        Gestiona tiempos y movimientos entre CeDis
-        Monitorea tus inventarios en tiempo real
-        Elimina el robo hormiga mediante sistemas de seguridad preventiva
-        Administra múltiples proveedores de transporte simultáneamente</p>
+      <h1 class="cabe">Incrementa la eficiencia de tu negocio</h1>
+      <p> Estudiamos cada proceso empresarial para ofrecer soluciones eficaces que los impulsen a alcanzar sus
+        objetivos.</p>
     </div>
 
     <!-- cards -->
@@ -46,12 +44,7 @@
         </figure>
         <div class="contenido">
           <h3>Consultoria Tecnologica</h3>
-          <p>Implementa la trazabilidad 4.0 con clientes y proveedores
-            Gestiona tiempos y movimientos entre CeDis
-            Monitorea tus inventarios en tiempo real
-            Elimina el robo hormiga mediante sistemas de seguridad preventiva
-            Administra múltiples proveedores de transporte simultáneamente</p>
-          <a href="#">leer mas</a>
+          <p>Analizamos las capacidades productivas de tu empresa y descubrimos áreas de oportunidad.</p>
         </div>
       </div>
 
@@ -61,13 +54,7 @@
         </figure>
         <div class="contenido">
           <h3>Integracion de soluciones tecnologicas</h3>
-          <p>Comunicados oficiales automatizados.
-            Datos de comportamiento social.
-            Integración comunitaria y programas de apoyo.
-            Trámites digitalizados.
-            Sistemas de seguridad ciudadana.
-            Ciudades inteligentes.</p>
-          <a href="#">leer mas</a>
+          <p> Creamos soluciones que faciliten la toma de decisiones frente a tu mercado. </p>
         </div>
       </div>
 
@@ -77,25 +64,17 @@
         </figure>
         <div class="contenido">
           <h3>Monitoreo web de procesos</h3>
-          <p>Localiza los cuellos de botella de tus procesos en tiempo real.
-            Respalda tu información industrial de forma segura y dinámica.
-            Monitorea todos tus Kpis desde un mismo panel.
-            Identifica la línea de origen de productos defectuosos.
-            Gestiona y compara el grado de calidad de proveedores e insumos.
-            Implementa alertas inteligentes.</p>
-          <a href="#">leer mas</a>
+          <p> Monitorea tus procesos y almacena información con datos en la nube en tiempo real. </p>
         </div>
       </div>
     </div>
 
     <!-- Fin cards -->
+
     <div class="general">
-      <h1 class="gen1"> E - COMMERCE LOGISTICS</h1>
-      <p class="gen2">Implementa la trazabilidad 4.0 con clientes y proveedores
-        Gestiona tiempos y movimientos entre CeDis
-        Monitorea tus inventarios en tiempo real
-        Elimina el robo hormiga mediante sistemas de seguridad preventiva
-        Administra múltiples proveedores de transporte simultáneamente</p>
+      <h1 class="gen1"> Lo que toda empresa necesita alcanzar </h1>
+      <p class="gen2"> Analizamos las capacidades productivas de tu empresa para brindar soluciones tecnológicas que
+        optimicen cada proceso y faciliten la toma de decisiones frente a tu mercado.</p>
     </div>
 
 
@@ -103,7 +82,8 @@
 
       <!-- contenedor del circulo -->
       <div class="contenedorC">
-        <div class="circulo"></div>
+        <img src="{% static 'img/icons/Poligonos.png' %}" class="circuloimg" alt="">
+        <!-- <div class="circulo"></div> -->
       </div>
 
       <!-- tabla de contenidos -->
@@ -111,27 +91,27 @@
         <tr>
           <td><img src="{% static 'img/icons/cerebro.png' %}" class="img">
           </td>
-          <td>Decisiones en tiempo real</td>
+          <td class="necesidad1">Decisiones en tiempo real</td>
         </tr>
         <tr>
           <td><img src="{% static 'img/icons/lupa.png' %}" class="img"></td>
-          <td>Tazabilidad operativa</td>
+          <td class="necesidad1">Tazabilidad operativa</td>
         </tr>
         <tr>
           <td><img src="{% static 'img/icons/learning data.png' %}" class="img"></td>
-          <td>Learning data</td>
+          <td class="necesidad1">Learning data</td>
         </tr>
         <tr>
           <td><img src="{% static 'img/icons/escalabilidad.png' %}" class="img"></td>
-          <td>Escalabilidad</td>
+          <td class="necesidad1">Escalabilidad</td>
         </tr>
         <tr>
           <td><img src="{% static 'img/icons/procesos.png' %}" class="img"></td>
-          <td>Inteligencia en procesos</td>
+          <td class="necesidad1">Inteligencia en procesos</td>
         </tr>
         <tr>
           <td><img src="{% static 'img/icons/recursos.png' %}" class="img"></td>
-          <td>Optimización de recursos</td>
+          <td class="necesidad1">Optimización de recursos</td>
         </tr>
       </table>
 
@@ -209,68 +189,105 @@
 
 
   <div class="container" style="background-color:  white;">
-    <!-- <div class="pendiente"> </div> -->
+
+    
+    <!-- cards -->
+    <div class="containerCards">
+      <div class="card">
+        <figure>
+          <img src=" {% static 'img/icons/consulta.png' %}">
+        </figure>
+        <div class="contenido">
+          <h3>Consultoria Tecnologica</h3>
+          <p>Analizamos las capacidades productivas de tu empresa y descubrimos áreas de oportunidad.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src=" {% static 'img/icons/tecnologia.png' %}">
+        </figure>
+        <div class="contenido">
+          <h3>Integracion de soluciones tecnologicas</h3>
+          <p> Creamos soluciones que faciliten la toma de decisiones frente a tu mercado. </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src=" {% static 'img/icons/estadisticas.png' %}">
+        </figure>
+        <div class="contenido">
+          <h3>Monitoreo web de procesos</h3>
+          <p> Monitorea tus procesos y almacena información con datos en la nube en tiempo real. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin cards -->
+    
     <!-- Formulario-->
     <!-- <section class="form-register"> -->
-      <form class="form-register">
-        {% csrf_token %}
-        <div class="elementos">
-          <table>
-            <tr>
-              <td>
-                <h4> Nombre* </h4>
-                <input class="controllers" type="text" name="nombre" id="nombreField" placeholder="Ingrese su nombre"
-                   onkeypress="return ch(event)" required>
-              </td>
+    <form class="form-register">
+      {% csrf_token %}
+      <div class="elementos">
+        <table>
+          <tr>
+            <td>
+              <h4> Nombre* </h4>
+              <input class="controllers" type="text" name="nombre" id="nombreField" placeholder="Ingrese su nombre"
+                onkeypress="return ch(event)" required>
+            </td>
 
-              <td>
-                <h4> Apellidos* </h4>
-                <input class="controllers" type="text" name="apellido" id="apellidoField"
-                  placeholder="Ingrese su apellido" onkeypress="return ch(event)" required>
-              </td>
-            </tr>
+            <td>
+              <h4> Apellidos* </h4>
+              <input class="controllers" type="text" name="apellido" id="apellidoField"
+                placeholder="Ingrese su apellido" onkeypress="return ch(event)" required>
+            </td>
+          </tr>
 
-            <tr>
-              <td>
-                <h4> Correo* </h4>
-                <input class="controllers" type="email" name="correo" id="correoField" placeholder="Ingrese su correo" required>
-              </td>
-              <td>
-                <h4> Telefono* </h4>
-                <input class="controllers" type="tel" name="telefono" id="telefonoField"
-                  placeholder="Ingrese su telefono" onkeypress="return numb(event)" required>
-              </td>
-            </tr>
+          <tr>
+            <td>
+              <h4> Correo* </h4>
+              <input class="controllers" type="email" name="correo" id="correoField" placeholder="Ingrese su correo"
+                required>
+            </td>
+            <td>
+              <h4> Telefono* </h4>
+              <input class="controllers" type="tel" name="telefono" id="telefonoField" placeholder="Ingrese su telefono"
+                onkeypress="return numb(event)" required>
+            </td>
+          </tr>
 
-            <tr>
-              <td>
-                <h4> Empresa* </h4>
-                <input class="controllers" type="text" name="nombre" id="empresaField"
-                  placeholder="Ingrese el nombre de empresa" onkeypress="return ch(event)" required>
-              </td>
-              <td>
-                <h4> Cargo* </h4>
-                <input class="controllers" type="text" name="apellido" id="cargoField" placeholder="Ingrese su cargo"
-                 onkeypress="return ch(event)" required>
-              </td>
-            </tr>
-          </table>
+          <tr>
+            <td>
+              <h4> Empresa* </h4>
+              <input class="controllers" type="text" name="nombre" id="empresaField"
+                placeholder="Ingrese el nombre de empresa" onkeypress="return ch(event)" required>
+            </td>
+            <td>
+              <h4> Cargo* </h4>
+              <input class="controllers" type="text" name="apellido" id="cargoField" placeholder="Ingrese su cargo"
+                onkeypress="return ch(event)" required>
+            </td>
+          </tr>
+        </table>
 
-          <h4> Comentarios* </h4>
-          <textarea class="controllers" placeholder="Deje su comentario" id="comentariosField"
-             onkeypress="return check(event)" required></textarea>
+        <h4> Comentarios* </h4>
+        <textarea class="controllers" placeholder="Deje su comentario" id="comentariosField"
+          onkeypress="return check(event)" required></textarea>
 
-          <!-- <input class="buttons" type="submit" value="Contactanos"> -->
-          <button  class="buttons" type="submit" onclick="datos()" style="color: white;"> Enviar </button>
+        <!-- <input class="buttons" type="submit" value="Contactanos"> -->
+        <button class="buttons" type="submit" onclick="datos()" style="color: white;"> Enviar </button>
 
-        </div>
-        <!-- Fin Formulario-->
+      </div>
+      <!-- Fin Formulario-->
 
-        <div class="info">
-          <h1 class="titt"> Contactanos</h1>
-          <p class="tecx"> Puedes localizarnos enviando un mensaje con tu informacion y en breve seras contactado</p>
-        </div>
-      </form>
+      <div class="info">
+        <h1 class="titt"> Contactanos</h1>
+        <p class="tecx"> Puedes localizarnos enviando un mensaje con tu informacion y en breve seras contactado</p>
+      </div>
+    </form>
     <!-- </section> -->
     <!-- Fin contenedor -->
   </div>
@@ -282,21 +299,21 @@
 
 <script>
 
-function datos() {
+  function datos() {
 
-  if ( document.getElementById('comentariosField').value == ""){
-    console.log("te hace falta llenar los campos")
+    if (document.getElementById('comentariosField').value == "") {
+      console.log("te hace falta llenar los campos")
 
-    Swal.fire(
-  'Campos incompletos',
-  '¿Te olvidaste de llenar alguno?',
-  'question'
-)
+      Swal.fire(
+        'Campos incompletos',
+        '¿Te olvidaste de llenar alguno?',
+        'question'
+      )
 
-  } else{
+    } else {
 
 
-    $.ajax({
+      $.ajax({
         url: "{% url 'index' %}",
         type: "POST",
         data: {
@@ -316,11 +333,12 @@ function datos() {
           console.log("Success");
         }
       });
-  }
-  
-
     }
 
+
+  }
+
 </script>
+
 </html>
 {% endblock %}

@@ -127,7 +127,7 @@ header label{
         margin-left: 30px;
         padding: 10px 30px;
         background-color: rgb(3, 171, 201);
-        box-shadow:  1px 10px 15px rgb(255, 255, 255);
+        box-shadow:  1px 2px 15px rgb(255, 255, 255);
         color: white;
         border-radius: 5px;
     }
@@ -151,7 +151,7 @@ header label{
 
 .cabe{
  color: #fff;
- padding-top: 3%;
+ padding-top: 6%;
  margin-left: 30px;
  font-size: 45px;
 }
@@ -264,20 +264,17 @@ height: 1100px;
 
 .contenedorC{
     height: 75%;
-    width: 60%;
+    width: 55%;
     float:right;
-    /* margin-right: 100px; */
     margin-top: 140px;
-    padding-top: 20px;
-    padding-left: 50px;    
 }
 
-.circulo{
-    height: 95%;
-    width: 95%;
+.circuloimg{
+    height: 100%;
+    width: 110%;
     /* background-color: rgb(16, 49, 65); */
-    background: url(../static/img/mundo.jpg);
-    border-radius: 100%;
+    /* background: url(../static/img/icons/Poligonos.png);
+    border-radius: 100%; */
 }
 
 .capa{
@@ -308,10 +305,14 @@ height: 1100px;
 .elementor, .elementor th,.elementor td {
     margin-top: 40px;
     margin-bottom: 5px;
-    margin-left: 96px;
    height: 30%;
-    width: 33%;
+    width: 45%;
 } 
+
+.necesidad1{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* fin LISTA */
 
@@ -447,12 +448,13 @@ margin-bottom: 3%;
     padding-top: 3%;*/
     margin: auto;
     margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 25px;
     font-family: 'calibri';
     color:white;
     box-shadow: 7px 13px 37px #000;
     
-}
+} 
 
 .info{
 width: 30%;
