@@ -4,12 +4,11 @@ from .models import Registro
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import get_template
-from PIL import Image
+
 
 def index(request):
   if request.method == 'POST':  
         correoD=request.POST['correo']
-        img = Image.open("picture.jpg") 
         asunto= request.POST['nombre']+ ' '+ request.POST['apellidos']+ ', '+ request.POST['cargo']+ ' en '+ request.POST['empresa']+ ' con correo '+ request.POST['correo']+ ' \n ' +'Envio su informacion para una consulta con respecto al asunto: '+ request.POST['comentarios']+ ' \n '+ 'En breve sera contactado al numero ' + request.POST['telefono']
         datos = Registro.objects.create(
             nombre=request.POST['nombre'], apellidos=request.POST['apellidos'], 

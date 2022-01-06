@@ -1,5 +1,40 @@
- 
-.blank{
+
+ .info-1{
+    background: rgb(16, 49, 65);
+    height: 200px;
     width: 100%;
-    height: 50px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+ }
+
+ .info-1 p{
+    color: #fff;
+/*     font-size: 25px; */
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+#prueba2{
+    height: 900px;
+     width: 100%;
+     background-color: rgb(153, 151, 156);
+     border-style: solid;
+     
+}
+
+#prueba2-div{
+    border-style: solid;
+    height: 600px;
+    width: 60%;
+}
+
+#prueba3-div{
+    border-style: solid;
+    width: 40%;
+}
+
+
+.lateral{
+    height: 500px;
+    width: 500px;
 }

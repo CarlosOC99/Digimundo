@@ -31,12 +31,8 @@
     <div class="container" style="background-color: white;">
         <!-- texto inicial -->
         <div class="text">
-            <h1> E - COMMERCE LOGISTICS </h1>
-            <p> Implementa la trazabilidad 4.0 con clientes y proveedores
-                Gestiona tiempos y movimientos entre CeDis
-                Monitorea tus inventarios en tiempo real
-                Elimina el robo hormiga mediante sistemas de seguridad preventiva
-                Administra múltiples proveedores de transporte simultáneamente.</p>
+            <h1> Soluciones a medida </h1>
+            <p> Dedicado a todo tipo de empresas ya que es una decisión a largo plazo.</p>
         </div>
 
 
@@ -45,12 +41,8 @@
             <div class="card" id="redondot">
                 <div class="row" id="redondot">
                     <div class="col-md-8">
-                        <h2 class="card-title mt-2"> E - COMMERCE LOGISTICS </h2>
-                        <p>Implementa la trazabilidad 4.0 con clientes y proveedores
-                            Gestiona tiempos y movimientos entre CeDis
-                            Monitorea tus inventarios en tiempo real
-                            Elimina el robo hormiga mediante sistemas de seguridad preventiva
-                            Administra múltiples proveedores de transporte simultáneamente.</p>
+                        <h2 class="card-title mt-2">  Consultoría tecnológica. </h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita perspiciatis ducimus id vel quam optio illo rem ullam repellat provident odit, iste ratione aliquam dolorum velit dolorem excepturi deserunt soluta!</p>
                     </div>
                     <div class="col-md-4">
                         <img src="{% static 'img/icons/1.png' %}" class="img-fluid">
@@ -66,13 +58,8 @@
                         <img src="{% static 'img/icons/2.png' %}" class="img-fluid">
                     </div>
                     <div class="col-md-8">
-                        <h2 class="card-title mt-2"> GOBIERNO DIGITAL </h2>
-                        <p>Comunicados oficiales automatizados.
-                            Datos de comportamiento social.
-                            Integración comunitaria y programas de apoyo.
-                            Trámites digitalizados.
-                            Sistemas de seguridad ciudadana.
-                            Ciudades inteligentes.</p>
+                        <h2 class="card-title mt-2"> Integración y desarrollo tecnológico. </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eveniet sit labore quam earum consectetur debitis animi dolorem ullam? Earum consectetur illum quis, adipisci accusantium architecto libero error aliquid?</p>
                     </div>
                 </div>
             </div>
@@ -82,12 +69,8 @@
             <div class="card" id="redondot">
                 <div class="row" id="redondot">
                     <div class="col-md-8">
-                        <h2 class="card-title mt-2"> E - COMMERCE LOGISTICS </h2>
-                        <p>Implementa la trazabilidad 4.0 con clientes y proveedores
-                            Gestiona tiempos y movimientos entre CeDis
-                            Monitorea tus inventarios en tiempo real
-                            Elimina el robo hormiga mediante sistemas de seguridad preventiva
-                            Administra múltiples proveedores de transporte simultáneamente.</p>
+                        <h2 class="card-title mt-2"> Monitoreo web de procesos. </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet aut ut id, fugit culpa nemo accusamus explicabo, reprehenderit nulla ratione aspernatur. Minima amet culpa a unde nulla corrupti dicta!</p>
                     </div>
                     <div class="col-md-4">
                         <img src="{% static 'img/icons/3.png' %}" class="img-fluid">
@@ -161,9 +144,70 @@
         </section>
         <!-- Fin carrusel 2 -->
 
-        <div class="target">
+      <!-- Formulario -->
 
+      <form class="form-register"> {% csrf_token %}
+        <div class="elementos">
+          <table>
+            <tr>
+              <td>
+                <h4> Nombre* </h4>
+                <input class="controllers" type="text" name="nombre" id="nombreField" placeholder="Ingrese su nombre"
+                  onkeypress="return ch(event)" required>
+              </td>
+  
+              <td>
+                <h4> Apellidos* </h4>
+                <input class="controllers" type="text" name="apellido" id="apellidoField"
+                  placeholder="Ingrese su apellido" onkeypress="return ch(event)" required>
+              </td>
+            </tr>
+  
+            <tr>
+              <td>
+                <h4> Correo* </h4>
+                <input class="controllers" type="email" name="correo" id="correoField" placeholder="Ingrese su correo"
+                  required>
+              </td>
+              <td>
+                <h4> Telefono* </h4>
+                <input class="controllers" type="tel" name="telefono" id="telefonoField" placeholder="Ingrese su telefono"
+                  onkeypress="return numb(event)" required>
+              </td>
+            </tr>
+  
+            <tr>
+              <td>
+                <h4> Empresa* </h4>
+                <input class="controllers" type="text" name="empresa" id="empresaField"
+                  placeholder="Ingrese el nombre de empresa" onkeypress="return ch(event)" required>
+              </td>
+              <td>
+                <h4> Cargo* </h4>
+                <input class="controllers" type="text" name="cargo" id="cargoField" placeholder="Ingrese su cargo"
+                  onkeypress="return ch(event)" required>
+              </td>
+            </tr>
+          </table>
+  
+          <h4> Comentarios* </h4>
+          <textarea class="controllers" placeholder="Deje su comentario" id="comentariosField"
+            onkeypress="return check(event)" required></textarea>
+  
+          <!-- <input class="buttons" type="submit" value="Contactanos"> -->
+          <button class="buttons" type="submit" onclick="datos()" style="color: white;"> Enviar </button>
+  
         </div>
+        <!-- Fin Formulario-->
+  
+        <div class="info">
+          <h1 class="titt"> Contactanos</h1>
+          <p class="tecx"> Puedes localizarnos enviando un mensaje con tu informacion y en breve seras contactado</p>
+        </div>
+      </form>
+      <!-- </section> -->
+
+      <!-- Fin formulario  -->
 
         <!-- Fin container -->
     </div>
@@ -205,6 +249,78 @@
                 }
             }
         })
+    </script>
+
+<script>
+
+    function get_cookie(name) {
+        let cookie_value = null;
+        if (document.cookie && document.cookie !== '') {
+          let cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+            let cookie = jQuery.trim(cookies[i]);
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+              cookie_value = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+            }
+          }
+        }
+        return cookie_value;/**/
+      }
+    
+      let csrf_token = get_cookie('csrftoken');
+    
+    
+      function datos() {
+        
+        if (document.getElementById('comentariosField').value == "") {
+          console.log("te hace falta llenar los campos")
+    
+          Swal.fire(
+            'Campos incompletos',
+            '¿Te olvidaste de llenar alguno?',
+            'question'
+          )
+    
+        } else {
+        
+    
+          $.ajax({
+            url: "{% url 'index' %}",
+            type: "POST",
+            data: {
+    
+              'nombre': $('#nombreField').val(),
+              'apellidos': $('#apellidoField').val(),
+              'correo': $('#correoField').val(),
+              'telefono': $('#telefonoField').val(),
+              'empresa': $('#empresaField').val(),
+              'cargo': $('#cargoField').val(),
+              'comentarios': $('#comentariosField').val(),
+              csrfmiddlewaretoken: csrf_token
+    
+            },
+            
+            success: function (data) {
+              Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Tu informacion ha sido recibida',
+      showConfirmButton: false,
+      timer: 1500
+    })
+    
+              console.log(data)
+              console.log("Success");
+            }
+          });
+    
+    
+        }
+    
+    
+      }
+    
     </script>
 </body>
 
