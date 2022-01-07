@@ -82,7 +82,6 @@ header label{
     background: url(../static/img/fondo2.0.jpg);
     /* background: -webkit-linear-gradient(left, rgb(16, 49, 65) 0%, rgba(255,255,255,0) 100%);  */
     background-size: cover;
-    background-position: center center;
 }
 /* fin img cabecera */
 
@@ -92,7 +91,6 @@ header label{
 .contenidos2{
     position:absolute;
     bottom:0;   
-    
     border-radius: 20px;
     height: 400px;
     width: 600px;
@@ -108,15 +106,6 @@ header label{
         color: #fff;
         margin-bottom: 30px;
         }
-
-        .zona1 img{
-            margin-top: 120px;
-            margin-right: 90px;
-            width: 600px;
-            height: 500px;
-            float: right; 
-        }
-
     
     .zona1 a{
         text-decoration:none;
@@ -177,7 +166,7 @@ header label{
     margin-top: 40px;
 }
 
-.card{
+.card2{
     justify-content: center;
     width: 100%;
     margin: 20px;
@@ -189,36 +178,36 @@ header label{
     transition: all 400ms ease;
     align-items: center;
 }
-.card:hover{
+.card2:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
     transform: translate(-3%) ;
 }
 
-.card img{
+.card2 img{
     width: 200px;
     height: 220px;
     display:block;
     margin:auto;
 }
 
-.card .contenido{
+.card2 .contenido{
     padding: 15px;
     text-align: center;
 }
 
-.card .contenido p{
+.card2 .contenido p{
     line-height: 1.5;
     color:#6a6a6a;
     
 }
 
-.card .contenido h3{
+.card2 .contenido h3{
  font-weight: 400;
  margin-bottom: 15px;
 
 }
 
-.card .contenido a{
+.card2 .contenido a{
 text-decoration: none;
 display: inline-block;
 padding: 10px;
@@ -229,7 +218,7 @@ border-radius: 4px;
 transition : all400ms ease;
 }
 
-.card .contenido a:hover {
+.card2 .contenido a:hover {
     background : #2fb4cc;
     color: #fff;
 } 
@@ -453,7 +442,6 @@ margin-bottom: 3%;
     font-family: 'calibri';
     color:white;
     box-shadow: 7px 13px 37px #000;
-    
 } 
 
 .info{
@@ -527,72 +515,3 @@ footer img{
 }
 
 /* fin footer */
-
-
-
-
-
-
-
-@media only screen and (max-width:991px){
-    .prueba-responsive{
-        display: block;
-        width: 100%;
-    }    
-
-    header{
-        padding: 20px;
-        
-    }
-
-    header label{
-        display: initial;
-    }
-
-    header .navbar{ 
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgb(0, 0, 0);
-        border-top: 1px solid rgba(0,0,0,.1);
-        display: none;
-    }
-
-    header .navbar ul li{
-        width: 100%;
-    }
-
-    header .navbar ul li ul{
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li{
-        background: #eee;
-    }
-
-    header .navbar ul li ul li ul{
-        width: 100px;
-        left: 0;
-    }
-
-    #menu-bar:checked ~ .navbar{
-        display: initial;
-    }
-
-    .zona1{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 479px) {
-
-    .marquee-horizontal{
-        height: 60px;
-    }
-
-    .icon-container-alt{
-        width: 100px;
-        height: 100px;
-    }
-}

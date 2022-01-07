@@ -1,7 +1,61 @@
+#nivel-2{
+    height: 600px;
+    width: 60%;    
+}
 
+.contenido-1 {
+    width: 100%;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+}
+
+#nivel-3{
+    width: 40%;
+}
+
+.lateral{
+    height: 540px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.caja-1{
+width: 320px;
+height: 250px;
+background: rgb(16, 49, 65);
+border-style: solid;
+margin-top: 20px;
+margin-right: 20px;
+border-radius: 30px;
+}
+
+.caja-2{
+    width: 320px;
+    height: 250px;
+    margin-top: 20px;
+    background: rgb(16, 49, 65);
+    border-style: solid;
+    border-radius: 30px;
+    }
+
+    .caja-icono{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .caja-texto{
+        color: white;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    
  .info-1{
     background: rgb(16, 49, 65);
-    height: 200px;
+    height: 150px;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -9,32 +63,24 @@
 
  .info-1 p{
     color: #fff;
-/*     font-size: 25px; */
+    font-weight: bold;
     padding-top: 30px;
     padding-left: 30px;
 }
 
-#prueba2{
-    height: 900px;
-     width: 100%;
-     background-color: rgb(153, 151, 156);
-     border-style: solid;
-     
-}
 
-#prueba2-div{
+.equipo{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border-style: solid;
-    height: 600px;
-    width: 60%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-#prueba3-div{
-    border-style: solid;
-    width: 40%;
-}
-
-
-.lateral{
-    height: 500px;
-    width: 500px;
+.equipoInfo{
+    text-align: center;
+    margin-top: 20px;
 }

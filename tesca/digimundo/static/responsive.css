@@ -1,0 +1,207 @@
+
+@media only screen and (max-width:991px){
+    .prueba-responsive{
+        display: block;
+        width: 100%;
+    }    
+
+    header{
+        padding: 20px;
+        width: 100%;
+        /* width: 375px; */
+        
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{ 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(0, 0, 0);
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100px;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    .zona1{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+        margin-right: 90px;
+    }
+
+    
+.img11 {
+    max-width: 160px;
+    max-height: 160px;
+    margin: -60px;
+    margin-top: 10px;
+  }
+
+  .img22 {
+    max-width: 160px;
+    max-height: 160px;
+    margin: -60px;
+    margin-top: 160px;
+  }
+
+  .img33 {
+    max-width: 160px;
+    max-height: 160px;
+    margin-left: 190px;
+    margin-top: 2px;
+  }
+
+  .img44 {
+    max-width: 160px;
+    max-height: 160px;
+    margin-left: 190px;
+    margin-top: 160px;
+  }
+
+  .contenidos2{ 
+      border-style: solid;
+    width: 50%;
+    height: 350px;
+    margin-left: 20px;
+}
+
+  .cont12{
+    font-size: 40px;
+    }
+
+  .zona1 a{
+        font-size: 15px;
+    }
+
+    .cabeza{
+        width: 100%;
+        height: 300px;
+    }
+
+    .contenidoFlip{
+        display: inherit;
+        height: 1120px;
+        width: 100%;
+        padding-left: 6%;
+
+    }
+
+    .flip-containerA{
+        border-style: solid;
+        margin-top: 20px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+
+    
+    
+}
+@media screen and (max-width: 479px) {
+
+    .zona1{
+        width: 100%;
+        height: 720px;
+    }
+
+    .contenidos2{
+        border-radius: 20px;
+        height: 450px;
+        width: 300px;
+        margin-left: 20px;
+        z-index: 20;
+    }
+
+    .mapa{
+        width: 250px;
+        height: 250px;
+        margin-top: 10px;
+        margin-right: 80px;
+    }
+
+    
+.img11 {
+    max-width: 120px;
+    max-height: 120px;
+    margin: -50px;
+    margin-top: 10px;
+  }
+
+  .img22 {
+    max-width: 120px;
+    max-height: 120px;
+    margin: -40px;
+    margin-top: 160px;
+  }
+
+  .img33 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 170px;
+    margin-top: 2px;
+  }
+
+  .img44 {
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 180px;
+    margin-top: 160px;
+  }
+
+  .contenidos2{ 
+    width: 90%;
+    height: 350px;
+    z-index: 20;
+}
+
+  .cont12{
+    font-size: 40px;
+    }
+
+  .zona1 a{
+        font-size: 15px;
+    }
+
+
+
+    .marquee-horizontal{
+        height: 60px;
+    }
+
+    .icon-container-alt{
+        width: 100px;
+        height: 100px;
+    }
+}
