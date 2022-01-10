@@ -41,6 +41,11 @@ function mostrar1() {
     document.getElementById('texto2').style.display = "none";
     document.getElementById('texto3').style.display = "none";
     document.getElementById('texto4').style.display = "none";
+
+    
+    document.getElementById("elementoS").style.textShadow = "2px 2px 5px #ffffff";
+    document.getElementById("elementoS").style.textDecoration = "underline";
+    document.getElementById("elementoS").style.textDecorationStyle = "double";
 }
 
 function mostrar2() {
@@ -48,6 +53,10 @@ function mostrar2() {
     document.getElementById('texto2').style.display = "inline";
     document.getElementById('texto3').style.display = "none";
     document.getElementById('texto4').style.display = "none";
+
+    document.getElementById("elementoS2").style.textShadow = "2px 2px 5px #ffffff";
+    document.getElementById("elementoS2").style.textDecoration = "underline";
+    document.getElementById("elementoS2").style.textDecorationStyle = "double";
 }
 
 function mostrar3() {
@@ -55,6 +64,10 @@ function mostrar3() {
     document.getElementById('texto2').style.display = "none";
     document.getElementById('texto3').style.display = "inline";
     document.getElementById('texto4').style.display = "none";
+
+    document.getElementById("elementoS3").style.textShadow = "2px 2px 5px #ffffff";
+    document.getElementById("elementoS3").style.textDecoration = "underline";
+    document.getElementById("elementoS3").style.textDecorationStyle = "double";
 }
 
 function mostrar4() {
@@ -62,4 +75,8 @@ function mostrar4() {
     document.getElementById('texto2').style.display = "none";
     document.getElementById('texto3').style.display = "none";
     document.getElementById('texto4').style.display = "inline";
+
+    document.getElementById("elementoS4").style.textShadow = "2px 2px 5px #ffffff";
+    document.getElementById("elementoS4").style.textDecoration = "underline";
+    document.getElementById("elementoS4").style.textDecorationStyle = "double";
 }

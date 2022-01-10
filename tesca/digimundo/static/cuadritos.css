@@ -113,8 +113,7 @@ animation-direction: alternate;
     animation-timing-function: step-end;
     animation-direction: alternate;
     }
-    
-    
+
     @keyframes aparecer4 {
         from{
            
@@ -124,7 +123,27 @@ animation-direction: alternate;
     opacity: 1;
         }
     }
-     
+   
+    .poligono{
+        width: 450px; 
+        height: 450px; 
+        margin-top: -40px;
+        margin-left: -50px;
+        -webkit-animation : spin 10s linear infinite;
+        -moz-animation: spin 10s linear infinite;
+        animation: spin 10s linear infinite;
+    }
+    @-webkit-keyframes spin{
+        100%{-webkit-transform: rotate(360deg);}
+    }
+
+    @-moz-keyframes spin{
+        100%{-webkit-transform: rotate(360deg);}
+    }
+    @keyframes spin {
+        100%{-webkit-transform: rotate(360deg);}
+    }
+    
 
 .mapa{
     margin-right: 250px;
@@ -138,7 +157,8 @@ animation-direction: alternate;
          -30px -20px 0 0 rgba(0,0,0,.1) inset,
          -70px -30px 0 0 rgba(0,0,0,.1) inset,
          -5px 5px 0 0 rgba(255,255,255,.2) inset;
-    background: url(../static/img/mundo.jpg);
+    background: url(../static/img/Mapa.png);
+    /* background: url(../static/img/Poligonos.png); */
     background-size: cover;
     -webkit-animation : tierra 5s infinite linear;
    
@@ -150,7 +170,7 @@ animation-direction: alternate;
 
     @keyframes bounce1{
         0%{
-            transform: translateY(-40%);
+            transform: translateY(-20%);
         }
         100%{
             transform: translateY(0%);

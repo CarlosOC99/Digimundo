@@ -24,10 +24,10 @@
 width: 320px;
 height: 250px;
 background: rgb(16, 49, 65);
-border-style: solid;
 margin-top: 20px;
 margin-right: 20px;
 border-radius: 30px;
+box-shadow: 7px 13px 37px #000;
 }
 
 .caja-2{
@@ -35,8 +35,8 @@ border-radius: 30px;
     height: 250px;
     margin-top: 20px;
     background: rgb(16, 49, 65);
-    border-style: solid;
     border-radius: 30px;
+    box-shadow: 7px 13px 37px #000;
     }
 
     .caja-icono{
