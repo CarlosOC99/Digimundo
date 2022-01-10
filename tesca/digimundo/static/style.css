@@ -7,10 +7,6 @@
     text-decoration: none;
 }
 
-body{
-    background-color: rgb(255, 255, 255);    
-}
-
 /* Inicio de header */
 header{
     position: fixed;
@@ -124,7 +120,7 @@ header label{
     margin-bottom: 20px;
     border-radius: 15px;
     height: 250px;
-    background: rgb(16, 49, 65);
+    background: #032531;
     box-shadow: 1px 10px 30px rgb(97, 96, 96);
 }
 
@@ -300,7 +296,7 @@ height: 1100px;
 .carou{
     width: 100%;
     height: 200px;
-    background: rgb(16, 49, 65);
+    background: #032531;
 }
 
 .carou1{
@@ -387,7 +383,7 @@ height: 1100px;
 .contacto{
     height: 300px;
     width: 100%;
-    background: rgb(16, 49, 65);
+    background: #032531;
     margin-top: 10px;
     justify-content: center;
     padding-right: 200px;
@@ -423,7 +419,7 @@ margin-bottom: 3%;
 .form-register{
     width: 90%;
     height: 550px;
-    background: rgb(16, 49, 65);
+    background: #032531;
     /*padding-left: 5%;
     padding-top: 3%;*/
     margin: auto;
@@ -494,7 +490,7 @@ padding-top: 3%;
 
 /* footer */
 footer{
-    background: rgb(16, 49, 65);
+    background: #032531;
     height: 100px;
 }
 

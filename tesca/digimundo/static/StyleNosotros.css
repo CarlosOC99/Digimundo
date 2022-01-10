@@ -23,7 +23,7 @@
 .caja-1{
 width: 320px;
 height: 250px;
-background: rgb(16, 49, 65);
+background: #032531;
 margin-top: 20px;
 margin-right: 20px;
 border-radius: 30px;
@@ -34,7 +34,7 @@ box-shadow: 7px 13px 37px #000;
     width: 320px;
     height: 250px;
     margin-top: 20px;
-    background: rgb(16, 49, 65);
+    background: #032531;
     border-radius: 30px;
     box-shadow: 7px 13px 37px #000;
     }
@@ -54,7 +54,7 @@ box-shadow: 7px 13px 37px #000;
 
     
  .info-1{
-    background: rgb(16, 49, 65);
+    background: #032531;
     height: 150px;
     width: 100%;
     margin-top: 80px;
