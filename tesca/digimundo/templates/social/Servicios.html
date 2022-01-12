@@ -42,7 +42,7 @@
                 <div class="row" id="redondot">
                     <div class="col-md-8">
                         <h2 class="card-title mt-2">  Consultoría tecnológica. </h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita perspiciatis ducimus id vel quam optio illo rem ullam repellat provident odit, iste ratione aliquam dolorum velit dolorem excepturi deserunt soluta!</p>
+                        <p>Nuestros consultores están en constante contacto contigo, para nosotros es valioso compartir el conocimiento y métodos para ayudarte a mejorar constantemente.</p>
                     </div>
                     <div class="col-md-4">
                         <img src="{% static 'img/icons/1.png' %}" class="img-fluid">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="card-title mt-2"> Integración y desarrollo tecnológico. </h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eveniet sit labore quam earum consectetur debitis animi dolorem ullam? Earum consectetur illum quis, adipisci accusantium architecto libero error aliquid?</p>
+                        <p>Nuestros expertos te ayudan a construir sistemas de alta calidad adaptables a las necesidades de tu negocio que respondan a tus retos y te ayuden a aprovechar las nuevas oportunidades.</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                 <div class="row" id="redondot">
                     <div class="col-md-8">
                         <h2 class="card-title mt-2"> Monitoreo web de procesos. </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet aut ut id, fugit culpa nemo accusamus explicabo, reprehenderit nulla ratione aspernatur. Minima amet culpa a unde nulla corrupti dicta!</p>
+                        <p>Sabemos que necesitas tener la tranquilidad de que la aplicación que se  integre evolucionará en consecuencia. Nuestros expertos trabajarán en colaboración con tus equipos antes, durante y después de la implementación.</p>
                     </div>
                     <div class="col-md-4">
                         <img src="{% static 'img/icons/3.png' %}" class="img-fluid">
@@ -202,7 +202,7 @@
   
         <div class="info">
           <h1 class="titt"> Contactanos</h1>
-          <p class="tecx"> Puedes localizarnos enviando un mensaje con tu informacion y en breve seras contactado</p>
+          <p class="tecx"> Un asesor especializado contactará contigo en 24/48h, para conocer tus necesidades y poder agendar una reunión.</p>
         </div>
       </form>
       <!-- </section> -->
@@ -253,22 +253,20 @@
 
 <script>
 
-    function get_cookie(name) {
-        let cookie_value = null;
-        if (document.cookie && document.cookie !== '') {
-          let cookies = document.cookie.split(';');
-          for (let i = 0; i < cookies.length; i++) {
-            let cookie = jQuery.trim(cookies[i]);
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-              cookie_value = decodeURIComponent(cookie.substring(name.length + 1));
-              break;
-            }
-          }
+function get_cookie(name) {
+    let cookie_value = null;
+    if (document.cookie && document.cookie !== '') {
+      let cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = jQuery.trim(cookies[i]);
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookie_value = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
         }
-        return cookie_value;/**/
       }
-    
-      let csrf_token = get_cookie('csrftoken');
+    }
+    return cookie_value;
+  }
     
     
       function datos() {
@@ -297,7 +295,7 @@
               'empresa': $('#empresaField').val(),
               'cargo': $('#cargoField').val(),
               'comentarios': $('#comentariosField').val(),
-              csrfmiddlewaretoken: csrf_token
+              csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
     
             },
             

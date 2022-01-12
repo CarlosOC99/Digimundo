@@ -40,16 +40,20 @@ box-shadow: 7px 13px 37px #000;
     }
 
     .caja-icono{
-        width: 100px;
-        height: 100px;
-        margin-top: 10px;
+        width: 90px;
+        height: 90px;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+
+    .caja-titulo1{
+        color: white;
         margin-left: 10px;
     }
 
     .caja-texto{
         color: white;
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     

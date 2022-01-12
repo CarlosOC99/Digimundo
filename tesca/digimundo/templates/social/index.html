@@ -161,37 +161,19 @@
         </style>
       </div>
       <!-- /../fondo.jpg -->
-
+      
       <div class="track-horizontal">
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt=""
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Tescalogo.png' %}" alt=""
+            class="icon"/></div>
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Cristoballogo.png' %}" alt=""
+            class="icon"/></div>
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Ramar.png' %}" alt=""
             class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt=""
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Modelologo.png' %}" alt=""
+            class="iconM" /></div>
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Acclogo.png' %}" alt=""
             class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt=""
-            class="icon" /></div>
-        <div class="icon-container-alt"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt=""
+        <div class="icon-container-alt"><img src="{% static 'img/colaboradores/Mercadolibrelogo.png' %}" alt=""
             class="icon" /></div>
       </div>
     </div>
@@ -208,31 +190,28 @@
     <div class="containerCards">
       <div class="card2">
         <figure>
-          <img src=" {% static 'img/icons/consulta.png' %}">
+          <img src=" {% static 'img/icons/pensamiento.png' %}">
         </figure>
         <div class="contenido">
-          <h3>Consultoria Tecnologica</h3>
-          <p>Analizamos las capacidades productivas de tu empresa y descubrimos áreas de oportunidad.</p>
+          <p>Nuestros servicios te ofrecen tanto el conocimiento como la asistencia necesaria para ayudarte a tomar el control de tu negocio.</p>
         </div>
       </div>
 
       <div class="card2">
         <figure>
-          <img src=" {% static 'img/icons/tecnologia.png' %}">
+          <img src=" {% static 'img/icons/comunicacion.png' %}">
         </figure>
         <div class="contenido">
-          <h3>Integracion de soluciones tecnologicas</h3>
-          <p> Creamos soluciones que faciliten la toma de decisiones frente a tu mercado. </p>
+          <p> Puedes confiar en nosotros para obtener ayuda rápida. Nuestro equipo de soporte brindará lo necesario por si necesitas complementar tus recursos o conocimientos con nuestro servicio.</p>
         </div>
       </div>
 
       <div class="card2">
         <figure>
-          <img src=" {% static 'img/icons/estadisticas.png' %}">
+          <img src=" {% static 'img/icons/companero.png' %}">
         </figure>
         <div class="contenido">
-          <h3>Monitoreo web de procesos</h3>
-          <p> Monitorea tus procesos y almacena información con datos en la nube en tiempo real. </p>
+          <p> Digimundo Technologies te acompañará durante todo el camino con nuestras soluciones de tecnologos expertos más allá de la implementación y desarrollo de software. </p>
         </div>
       </div>
     </div>
@@ -275,12 +254,12 @@
           <tr>
             <td>
               <h4> Empresa* </h4>
-              <input class="controllers" type="text" name="nombre" id="empresaField"
+              <input class="controllers" type="text" name="empresa" id="empresaField"
                 placeholder="Ingrese el nombre de empresa" onkeypress="return ch(event)" required>
             </td>
             <td>
               <h4> Cargo* </h4>
-              <input class="controllers" type="text" name="apellido" id="cargoField" placeholder="Ingrese su cargo"
+              <input class="controllers" type="text" name="cargo" id="cargoField" placeholder="Ingrese su cargo"
                 onkeypress="return ch(event)" required>
             </td>
           </tr>
@@ -298,7 +277,7 @@
 
       <div class="info">
         <h1 class="titt"> Contactanos</h1>
-        <p class="tecx"> Puedes localizarnos enviando un mensaje con tu informacion y en breve seras contactado</p>
+        <p class="tecx"> ¿Cómo podemos ayudarte? sea para asesorarte en las necesidades de tu negocio o para conocer más en detalle algunas de nuestras soluciones.</p>
       </div>
     </form>
     <!-- </section> -->
@@ -311,6 +290,21 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <script>
+
+function get_cookie(name) {
+    let cookie_value = null;
+    if (document.cookie && document.cookie !== '') {
+      let cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = jQuery.trim(cookies[i]);
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookie_value = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookie_value;
+  }
 
   function datos() {
 
@@ -338,10 +332,19 @@
           'empresa': $('#empresaField').val(),
           'cargo': $('#cargoField').val(),
           'comentarios': $('#comentariosField').val(),
-          csrfmiddlewaretoken: '{{ csrf_token }}',
+          csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
 
         },
         success: function (data) {
+
+          Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Tu informacion ha sido recibida',
+  showConfirmButton: false,
+  timer: 1500
+})
+
           console.log(data)
           console.log("Success");
         }

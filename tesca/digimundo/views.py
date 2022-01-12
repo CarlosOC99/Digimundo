@@ -22,10 +22,9 @@ def index(request):
     'Correo de Confirmacion',
     asunto,
     'digimundo technologies',
-    [correoD,'tescacorpora@gmail.com'],
+    [correoD,'marketanalytics@tescacorporation.com'],
     fail_silently=False
 )
-
   context = {}
 
   return render(request, 'social/index.html')
